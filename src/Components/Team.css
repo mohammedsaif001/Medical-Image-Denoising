@@ -24,7 +24,7 @@
 }
 
 .mt-100 {
-    margin-top: 100px
+    margin-top: 50px
 }
 
 .profile img {
@@ -84,3 +84,8 @@
     text-decoration: none;
     color: #555;
 }
+/* 
+.individualCard{
+    margin-top: 500px;
+    background-color: black;
+} */

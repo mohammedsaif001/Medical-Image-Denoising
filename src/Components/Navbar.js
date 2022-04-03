@@ -1,6 +1,10 @@
 import React from 'react'
 
+import { Button, Modal } from 'react-bootstrap'
+import ModalNav from './ModalNav'
+
 function Navbar() {
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-3">
             <div className="container-fluid">
@@ -19,11 +23,16 @@ function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link" href="#">Working Algo</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Upload</a>
-                        </li>
 
                     </ul>
+
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-3" type="submit" onClick={() => setModalShow(true)}>Upload</button>
+
+                    <ModalNav
+                        show={modalShow}
+                        onHide={() => setModalShow(false)} />
+
+
 
                 </div>
             </div>
