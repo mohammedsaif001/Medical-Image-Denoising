@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Button, Modal } from 'react-bootstrap'
 import ModalNav from './ModalNav'
 
 function Navbar() {
@@ -26,7 +25,7 @@ function Navbar() {
 
                     </ul>
 
-                    <button class="btn btn-outline-light my-2 my-sm-0 mx-3" type="submit" onClick={() => setModalShow(true)}>Upload</button>
+                    <button className="btn btn-outline-light my-2 my-sm-0 mx-3" type="submit" onClick={() => setModalShow(true)}>Upload</button>
 
                     <ModalNav
                         show={modalShow}

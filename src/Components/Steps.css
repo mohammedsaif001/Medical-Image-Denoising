@@ -1,0 +1,49 @@
+.v3_28 {
+    /* width: 14px; */
+    color: rgb(255, 255, 255);
+
+    /* position: absolute; */
+padding: 15px 34px;
+    /* top: 395px; */
+    /* margin-top: 15px; */
+    /* left: 35px; */
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 36px;
+    opacity: 1;
+    /* text-align: left; */
+}
+
+.v3_24 {
+    width: 85px;
+    height: 85px;
+    background: rgb(140, 0, 70);
+    opacity: 1;
+    /* position: absolute; */
+    margin-top: 150px;
+    /* padding-top: 35px; */
+    /* top: 381px; */
+    /* left: 197px; */
+    border-radius: 50%;
+}
+
+.stepsContainer{
+   
+    /* margin: 150px; */
+    /* padding: 200px; */
+    /* padding-top: 50px; */
+    padding: 50px 200px;
+}
+
+.bgColor{
+    /* background-color: rgb(15, 25, 165); */
+    /* padding: 200px; */
+}
+
+.container2 {
+    background-color: white;
+    text-align: center;
+    /* border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2); */
+    margin-bottom: 50px
+}
