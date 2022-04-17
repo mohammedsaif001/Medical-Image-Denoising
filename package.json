@@ -16,6 +16,7 @@
     "mdb-react-ui-kit": "^3.0.0",
     "react": "^18.0.0",
     "react-bootstrap": "^2.2.2",
+    "react-compare-slider": "^2.2.0",
     "react-dom": "^18.0.0",
     "react-filepond": "^7.1.1",
     "react-image-comparison-slider": "^1.8.4",

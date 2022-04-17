@@ -1,5 +1,7 @@
 import React from 'react'
 import ImageSlider from "react-image-comparison-slider";
+import './ImageComparison.css'
+import ImageSliderCustom from './ImageSliderCustom';
 
 function ImageComparison() {
     return (
@@ -18,8 +20,8 @@ function ImageComparison() {
             <div className="container1" style={{ padding: '29px' }}>
                 <div className="row">
                     <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5" >
-                        <div style={{ width: '65%', height: '50vh', marginTop: '5vh', marginBottom: '5vh', marginLeft: 'auto', marginRight: 'auto' }} >
-                            <ImageSlider
+                        <div className='img-fluid imageSli' >
+                            {/* <ImageSlider
                                 image1={process.env.PUBLIC_URL + "images/Output.jpg"}
                                 image2={process.env.PUBLIC_URL + "images/test.jpg"}
                                 onSlide={() => {
@@ -29,7 +31,8 @@ function ImageComparison() {
                                 rightLabelText='Output'
                                 handleColor='black'
                                 sliderColor='white'
-                            />
+                            /> */}
+                            <ImageSliderCustom />
 
                         </div>
                     </div>

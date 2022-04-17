@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Components/Team.css'
 import './Components/ImageComparison.css'
 import './Components/Steps.css'
+import './Components/AccordionQuestions.css'
 
 
 ReactDOM.render(
