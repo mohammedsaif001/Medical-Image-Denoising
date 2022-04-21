@@ -1,46 +1,27 @@
-import React from "react";
+import React from 'react'
+import Steps from './Steps'
+import StepsContent from './StepsContent'
 
 function AlgorithmSteps() {
     return (
-        <>
-            <div className="container">
-                <div className="row">
-                    <span className="col-xl-6 col-lg-6 col-md-6">
-                        <div className="v3_24">
-                            <span className="v3_28">1</span>
+        <div id='workingAlgo' className='mt-4'>
+            <div className='stepsContainer mt-4' >
+                <div className="container2"> <h1>Steps</h1>
+                    <p className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae velit harum exercitationem consequuntur, alias eius tempore et delectus ratione facilis qui neque explicabo pariatur, ipsa dolorum nulla odio perferendis praesentium. Dolores minima harum consequatur nisi, saepe quos adipisci quod placeat non a, deleniti, reprehenderit rerum! Consequatur dolor enim iure mollitia nostrum maxime architecto perferendis itaque.</p></div>
+                <div className="row container2">
+                    {/* {StepsContent.length > 0 && StepsContent.map((ele) => (
 
-                        </div>
+                        <Steps number={ele.slNo} heading={ele.heading} description={ele.description} key={ele.slNo} />
+                    ))} */}
+                    {StepsContent.length > 0 && StepsContent.map((ele, index) => (
+                        <Steps number={ele.slNo} heading={ele.heading} description={ele.description} key={ele.slNo} value={index} />
+                    ))}
 
-                    </span>
-                    <span className="col-xl-6 col-lg-6 col-md-6">
-                        <h3>Heading</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ratione deleniti praesentium quas soluta, nesciunt repellat nam earum laudantium dicta minima! Sunt ullam facilis laborum quas vel ratione autem atque veritatis culpa commodi?</p>
-                    </span>
-                    <div className="col-xl-6 col-lg-6 col-md-6">
-                        {" "}
-                        <div className="v3_31">
-                            <span className="v3_28">2</span>
-                        </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6">
-                        {" "}
-                        <div className="v3_35">
-                            <span className="v3_28">3</span>
-                        </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6">
-                        {" "}
-                        <div className="v3_39">
-                            <span className="v3_28">4</span>
-                        </div>
-                    </div>
-                    {/* <div className="v3_42"></div>
-                <div className="v3_43"></div>
-                <div className="v3_44"></div> */}
+
                 </div>
             </div>
-        </>
-    );
+        </div >
+    )
 }
 
-export default AlgorithmSteps;
+export default AlgorithmSteps

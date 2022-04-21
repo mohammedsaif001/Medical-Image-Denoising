@@ -1,8 +1,8 @@
 import React from 'react'
+import AlgorithmSteps from './Components/AlgorithmSteps'
 import CarouselHome from './Components/CarouselHome'
 import ImageComparison from './Components/ImageComparison'
 import Navbar from './Components/Navbar'
-import Steps from './Components/Steps'
 import Team from './Components/Team'
 
 
@@ -11,7 +11,7 @@ const App = () => {
     <>
       <Navbar />
       <CarouselHome />
-      <Steps />
+      <AlgorithmSteps />
       <ImageComparison />
       <Team />
 
