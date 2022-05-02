@@ -1,67 +1,57 @@
 .accordion .card {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
-
 .accordion .card .card-header {
-    background: none;
-    border: none;
-    padding: .4rem 1rem;
-    font-family: "Roboto", sans-serif;
+  background: none;
+  border: none;
+  padding: 0.4rem 1rem;
+  font-family: "Roboto", sans-serif;
 }
-
 .accordion .card-header h2 span {
-    float: left;
-    margin-top: 10px;
+  float: left;
+  margin-top: 10px;
 }
-
 .accordion .card-header .btn {
-    color: #2f2f31;
-    font-size: 1.04rem;
-    text-align: left;
-    position: relative;
-    font-weight: 500;
-    padding-left: 2rem;
+  color: #2f2f31;
+  font-size: 1.04rem;
+  text-align: left;
+  position: relative;
+  font-weight: 500;
+  padding-left: 2rem;
 }
-
 .accordion .card-header i {
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 9px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 9px;
 }
-
 .accordion .card-header .btn:hover {
-    color: #ff8300;
+  color: #ff8300;
 }
-
 .accordion .card-body {
-    color: #324353;
-    padding: 0.5rem 3rem;
+  color: #324353;
+  padding: 0.5rem 3rem;
 }
-
 .page-title {
-    margin: 3rem 0 3rem 1rem;
-    font-family: "Roboto", sans-serif;
-    position: relative;
+  margin: 3rem 0 3rem 1rem;
+  font-family: "Roboto", sans-serif;
+  position: relative;
 }
-
 .page-title::after {
-    content: "";
-    width: 80px;
-    position: absolute;
-    height: 3px;
-    border-radius: 1px;
-    background: #73bb2b;
-    left: 0;
-    bottom: -15px;
+  content: "";
+  width: 80px;
+  position: absolute;
+  height: 3px;
+  border-radius: 1px;
+  background: #73bb2b;
+  left: 0;
+  bottom: -15px;
 }
-
 .accordion .highlight .btn {
-    color: #74bd30;
+  color: #74bd30;
 }
-
 .accordion .highlight i {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }

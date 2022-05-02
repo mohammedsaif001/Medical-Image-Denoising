@@ -2,9 +2,9 @@ import React from "react";
 function TeamCard(props) {
     return (
         <>
-            <div className="card col-md-3 mt-100" key={props.personName}>
+            <div className="card card-ext col-md-3 mt-100" key={props.personName}>
                 <div className="card-content">
-                    <div className="card-body p-0">
+                    <div className="card-body card-body-ext p-0">
                         <div className="profile">
                             {" "}
                             <img src={props.image} />{" "}

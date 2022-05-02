@@ -3,6 +3,7 @@ import React from 'react'
 import teamDetails from './TeamDetails'
 import TeamCard from './TeamCard'
 
+
 function Team() {
     return (
         <div className='team' id='aboutUs'>

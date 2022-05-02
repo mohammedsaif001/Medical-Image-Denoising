@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,6 +9,8 @@ import './Components/Team.css'
 import './Components/ImageComparison.css'
 import './Components/Steps.css'
 import './Components/AccordionQuestions.css'
+// import './Components/Tools.css'
+
 
 
 ReactDOM.render(

@@ -1,9 +1,12 @@
 import React from 'react'
+import AccordionQuestions from './Components/AccordionQuestions'
 import AlgorithmSteps from './Components/AlgorithmSteps'
 import CarouselHome from './Components/CarouselHome'
 import ImageComparison from './Components/ImageComparison'
 import Navbar from './Components/Navbar'
 import Team from './Components/Team'
+import Test from './Components/Test'
+import ToolsUsed from './Components/ToolsUsed'
 
 
 const App = () => {
@@ -14,6 +17,9 @@ const App = () => {
       <AlgorithmSteps />
       <ImageComparison />
       <Team />
+      <AccordionQuestions />
+      {/* <Test /> */}
+      {/* <ToolsUsed /> */}
 
     </>
   )

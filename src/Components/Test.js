@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import $ from 'jquery'
-export default class AccordionQuestions extends Component {
+
+export default class Test extends Component {
     componentDidMount = () => {
         $(".collapse.show").each(function () {
             $(this).prev(".card-header").addClass("highlight");
