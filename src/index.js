@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
+import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import './Components/Team.css'
 import './Components/ImageComparison.css'
 import './Components/Steps.css'
 import './Components/AccordionQuestions.css'
-// import './Components/Tools.css'
+import './Components/Tools.css'
+
 
 
 
