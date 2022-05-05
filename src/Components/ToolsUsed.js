@@ -4,8 +4,8 @@ import Slider from "react-slick";
 function ToolsUsed() {
     var settings = {
         // dots: true,
-        // autoplaySpeed: 500,
-        // autoplay: true,
+        autoplaySpeed: 3050,
+        autoplay: true,
         // slidesToShow: 4,
         // slidesToScroll: 3,
         initialSlide: 0,
@@ -17,7 +17,7 @@ function ToolsUsed() {
                 breakpoint: 1920,
                 settings: {
                     slidesToShow: 6,
-                    slidesToScroll: 3,
+                    slidesToScroll: 5,
                     infinite: true,
                     lazyLoad: 'ondemand',
                     dots: true
@@ -27,7 +27,7 @@ function ToolsUsed() {
                 breakpoint: 1390,
                 settings: {
                     slidesToShow: 5,
-                    slidesToScroll: 3,
+                    slidesToScroll: 4,
                     infinite: true,
                     lazyLoad: 'ondemand',
                     dots: true
@@ -96,16 +96,19 @@ function ToolsUsed() {
                 <img src="images/youtube.png" alt="logo" /> */}
 
 
-                <img src="images/tensorflow.png" className='mx-4' alt="logo" />
-                <img src="images/matplotlib.png" className='mx-4' alt="logo" />
-                <img src="images/react.jpg" className='mx-4' alt="logo" />
-                <img src="images/nodejs.png" className='mx-4' alt="logo" />
-                <img src="images/python.png" className='mx-4' alt="logo" />
-                <img src="images/javascript.png" className='mx-4' style={{ margin: '5px', padding: '5px' }} alt="logo" />
-                <img src="images/aws.png" className='mx-4' alt="logo" />
-                <img src="images/flask.png" className='mx-4' alt="logo" />
-                <img src="images/scikit.jpg" className='mx-4' alt="logo" />
-                <img src="images/bootstrap.png" className='mx-4' alt="logo" />
+                <img src="images/python.png" alt="logo" />
+                <img src="images/tensorflow.png" alt="logo" />
+                <img src="images/matplotlib.jpg" alt="logo" />
+                <img src="images/scikit.jpg" alt="logo" />
+                <img src="images/keras.jpg" alt="logo" />
+                <img src="images/kaggle.png" alt="logo" />
+                <img src="images/reactjs.png" alt="logo" />
+                <img src="images/bootstrap.png" alt="logo" />
+                <img src="images/javascript2.jpg" alt="logo" />
+                <img src="images/jquery.png" alt="logo" />
+                <img src="images/nodejs.png" alt="logo" />
+                <img src="images/aws.png" alt="logo" />
+                <img src="images/flask.png" alt="logo" />
 
 
                 {/* <div>
