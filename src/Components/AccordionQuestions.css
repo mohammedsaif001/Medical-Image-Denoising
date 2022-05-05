@@ -39,6 +39,11 @@
   font-family: "Roboto", sans-serif;
   position: relative;
 }
+/* .page-title-big {
+  margin: 3rem 0 3rem 1rem;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+} */
 .page-title::after {
   content: "";
   width: 80px;
@@ -49,6 +54,16 @@
   left: 0;
   bottom: -15px;
 }
+/* .page-title-big::after {
+  content: "";
+  width: 50%;
+  position: absolute;
+  height: 3px;
+  border-radius: 1px;
+  background: #73bb2b;
+  left: 0;
+  bottom: -15px;
+} */
 .accordion .highlight .btn {
   color: #74bd30;
 }

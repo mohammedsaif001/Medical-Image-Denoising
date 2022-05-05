@@ -4,13 +4,14 @@ import Slider from "react-slick";
 function ToolsUsed() {
     var settings = {
         // dots: true,
-        autoplaySpeed: 3050,
+        // autoplaySpeed: 750,
         autoplay: true,
         // slidesToShow: 4,
         // slidesToScroll: 3,
         initialSlide: 0,
         centerPadding: '200px',
         accessibility: true,
+        rows: '1',
 
         responsive: [
             {
@@ -55,8 +56,8 @@ function ToolsUsed() {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1, lazyLoad: 'ondemand',
+                    slidesToShow: 2,
+                    slidesToScroll: 2, lazyLoad: 'ondemand',
                 }
             }
         ]
@@ -77,8 +78,8 @@ function ToolsUsed() {
         //         </section>
         //     </div>
         // </Slider>
-        <div className='container'>
-            <h1 className="page-title">Tools/Libraries/Frameworks</h1>
+        <div className='container mb-5'>
+            <h1 className="page-title">Tools / Libraries / Frameworks</h1>
             <Slider {...settings}>
                 {/* <img src="images/adidas.png" alt="logo" />
 

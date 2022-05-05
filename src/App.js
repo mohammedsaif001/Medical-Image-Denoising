@@ -15,9 +15,9 @@ const App = () => {
       <CarouselHome />
       <AlgorithmSteps />
       <ImageComparison />
+      <ToolsUsed />
       <Team />
       <AccordionQuestions />
-      <ToolsUsed />
 
     </>
   )

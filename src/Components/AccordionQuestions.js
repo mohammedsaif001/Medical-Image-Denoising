@@ -19,7 +19,7 @@ export default class AccordionQuestions extends Component {
             <div className="container-lg">
                 <div className="row">
                     <div className="col-lg-12">
-                        <h1 className="page-title">FAQs</h1>
+                        <h1 className="page-title">Frequently Asked Questions</h1>
                         <div className="accordion" id="accordionExample">
                             <div className="card">
                                 <div className="card-header" id="headingOne">
