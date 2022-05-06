@@ -103,6 +103,7 @@ function ToolsUsed() {
                 <img src="images/scikit.jpg" alt="logo" />
                 <img src="images/keras.jpg" alt="logo" />
                 <img src="images/kaggle.png" alt="logo" />
+                <img src="images/figma.png" alt="logo" />
                 <img src="images/reactjs.png" alt="logo" />
                 <img src="images/bootstrap.png" alt="logo" />
                 <img src="images/javascript2.jpg" alt="logo" />

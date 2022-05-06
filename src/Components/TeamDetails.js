@@ -1,6 +1,7 @@
 const teamDetails = [
     {
-        image: 'https://media-exp1.licdn.com/dms/image/C5603AQFc7cHRZ4UIyQ/profile-displayphoto-shrink_800_800/0/1649163132894?e=1655337600&v=beta&t=uPczWuP4Ct2sLTKLIJpbcbAFfq3C-PsWkiLX6-pcGas',
+        // image: 'https://media-exp1.licdn.com/dms/image/C5603AQFc7cHRZ4UIyQ/profile-displayphoto-shrink_800_800/0/1649163132894?e=1655337600&v=beta&t=uPczWuP4Ct2sLTKLIJpbcbAFfq3C-PsWkiLX6-pcGas',
+        image: process.env.PUBLIC_URL + "images/yamanappa.jpg",
         personName: 'Prof Yamanappa',
         title: 'Assistant Professor - CSE',
         content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta reprehenderit magni quas consequuntur neque ex quisquam! .',

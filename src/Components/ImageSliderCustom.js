@@ -4,9 +4,9 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 function ImageSliderCustom() {
     return (
         <div >
-            <img-comparison-slider style={{ maxWidth: '255px', height: '255px', width: '100%' }} >
-                <img slot="first" src="images/Output.jpg" />
-                <img slot="second" src="images/test.jpg" />
+            <img-comparison-slider style={{ maxWidth: '400px', height: '400px', width: '400px' }} >
+                <img slot="first" src="images/output.png" />
+                <img slot="second" src="images/input.png" />
             </img-comparison-slider>
         </div>
     )
