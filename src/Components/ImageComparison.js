@@ -2,8 +2,10 @@ import React from 'react'
 import ImageSlider from "react-image-comparison-slider";
 import './ImageComparison.css'
 import ImageSliderCustom from './ImageSliderCustom';
+import ModalNav from './ModalNav'
 
 function ImageComparison() {
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <>
             {/* <div style={{ width: '75%', height: '90vh', marginTop: '5vh', marginBottom: '5vh', marginLeft: 'auto', marginRight: 'auto' }} >
@@ -42,9 +44,14 @@ function ImageComparison() {
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12" >
-                        {/* <h4 className='mt-5 mb-4'>Bootstrap Responsive Website</h4> */}
+                        <h4 className='mt-5 mb-4'>Details About the Working</h4>
                         <p className='mt-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque est labore nemo magnam. Libero nisi a quos consectetur est, ipsum nihil nobis laborum velit quod harum odit magni beatae ullam similique iure, at, eveniet ex voluptatem quam nostrum necessitatibus deleniti? Illo blanditiis dignissimos nostrum aut commodi, fugit similique hic ipsum inventore explicabo natus veniam ullam itaque iusto minus eum! Deserunt quos iure quaerat cupiditate eos reprehenderit repudiandae, repellat doloremque rerum aliquam omnis laudantium iste porro atque similique incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos dolorum nihil numquam officia magnam nulla quam reiciendis similique cupiditate iste aliquam illo officiis modi assumenda odio excepturi voluptatum amet voluptatem, magni maxime labore ducimus esse! Delectus unde, fuga nihil corporis mollitia molestiae aliquam veritatis impedit!</p>
 
+                        <button className="btn btn-dark my-2 my-sm-0 mx-3" type="submit" onClick={() => setModalShow(true)}>CLICK ME TO UPLOAD YOUR IMAGE</button>
+
+                        <ModalNav
+                            show={modalShow}
+                            onHide={() => setModalShow(false)} />
                     </div>
                 </div>
             </div>

@@ -21,7 +21,7 @@ function Steps(props) {
                 {/* Ternary Operator to check Screen size if less tham 576 add another arrow at last */}
                 {isDesktop ?
                     // Ternary Operator to display arrows except the last one
-                    props.value < 4 ?
+                    props.value < 7 ?
                         // 2nd Ternary True Condition
                         <center><div style={{ fontSize: '9vh', fontWeight: 'bold', color: 'black' }} className='mb-0'> &#x2193;</div></center> :
                         // 2nd Ternary False Condition
@@ -33,9 +33,9 @@ function Steps(props) {
 
 
             </div>
-            <div className="col-xl-10 col-lg-10 col-md-10 col-sm-9 col-12">
-                <h4 className='mb-4 ml-0'>{props.heading}</h4>
-                <p> {props.description}</p>
+            <div className="col-xl-10 col-lg-10 col-md-10 col-sm-9 col-12 mt-3">
+                <h4 className='ml-0'>{props.heading}</h4>
+                <p > {props.description}</p>
             </div>
             <div>
 
