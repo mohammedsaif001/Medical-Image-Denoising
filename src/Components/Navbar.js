@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import ModalNav from './ModalNav'
 
 function Navbar() {
     const [modalShow, setModalShow] = React.useState(false);
+
+    useEffect(() => {
+        // Collapsible Navbar after Clicking Link
+        $('.js-scroll-trigger').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        })
+    }
+    )
+
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-3">
             <div className="container-fluid">
@@ -14,22 +24,22 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <a className="nav-link active js-scroll-trigger" aria-current="page" href="#"  >Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#algo">Algorithm</a>
+                            <a className="nav-link js-scroll-trigger" href="#algo"  >Algorithm</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#working">Working</a>
+                            <a className="nav-link js-scroll-trigger" href="#working">Working</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#tools">Tools Used</a>
+                            <a className="nav-link js-scroll-trigger" href="#tools"  >Tools Used</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#aboutus">About Us</a>
+                            <a className="nav-link js-scroll-trigger" href="#aboutus" >About Us</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#faq">FAQs</a>
+                            <a className="nav-link js-scroll-trigger" href="#faq"  >FAQs</a>
                         </li>
 
                     </ul>

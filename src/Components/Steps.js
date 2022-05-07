@@ -32,13 +32,12 @@ function Steps(props) {
 
 
 
+
+
             </div>
             <div className="col-xl-10 col-lg-10 col-md-10 col-sm-9 col-12 mt-3">
                 <h4 className='ml-0'>{props.heading}</h4>
                 <p > {props.description}</p>
-            </div>
-            <div>
-
             </div>
         </>
     )
