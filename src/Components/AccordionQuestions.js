@@ -16,7 +16,7 @@ export default class AccordionQuestions extends Component {
         return (
 
 
-            <div className="container-lg">
+            <div className="container-lg" id='faq'>
                 <div className="row">
                     <div className="col-lg-12">
                         <h1 className="page-title">Frequently Asked Questions</h1>
@@ -24,7 +24,7 @@ export default class AccordionQuestions extends Component {
                             <div className="card">
                                 <div className="card-header" id="headingOne">
                                     <h2 className="clearfix mb-0">
-                                        <a className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i className="fa fa-chevron-circle-down"></i> What is Bootstrap Framework?</a>
+                                        <a className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i className="fa fa-chevron-circle-down"></i> Is this Algorithm Applicable only for Medical Images?</a>
                                     </h2>
                                 </div>
                                 <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -34,7 +34,7 @@ export default class AccordionQuestions extends Component {
                             <div className="card">
                                 <div className="card-header" id="headingTwo">
                                     <h2 className="mb-0">
-                                        <a className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i className="fa fa-chevron-circle-down"></i> How to Create Responsive Website with Bootstrap?</a>
+                                        <a className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i className="fa fa-chevron-circle-down"></i> Why Can't I Upload Regular Images to Denoise?</a>
                                     </h2>
                                 </div>
                                 <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -44,7 +44,7 @@ export default class AccordionQuestions extends Component {
                             <div className="card">
                                 <div className="card-header" id="headingThree">
                                     <h2 className="mb-0">
-                                        <a className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i className="fa fa-chevron-circle-down"></i> Does Bootstrap Framework Provide Cross-browser Support?</a>
+                                        <a className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i className="fa fa-chevron-circle-down"></i> Why am I Unable to Upload Images in PNG/JPG/JPEG/SVG/GIF?</a>
                                     </h2>
                                 </div>
                                 <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -54,7 +54,7 @@ export default class AccordionQuestions extends Component {
                             <div className="card">
                                 <div className="card-header" id="headingFour">
                                     <h2 className="mb-0">
-                                        <a className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i className="fa fa-chevron-circle-down"></i> Can I Use Bootstrap for Mobile App Development?</a>
+                                        <a className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i className="fa fa-chevron-circle-down"></i> Why this Algorithm is Working only for Black &amp; White images? </a>
                                     </h2>
                                 </div>
                                 <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">

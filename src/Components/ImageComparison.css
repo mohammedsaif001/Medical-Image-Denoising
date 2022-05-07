@@ -12,3 +12,12 @@ img-comparison-slider {
   --divider-color: red;
   --default-handle-color: rgb(255, 5, 5);
 }
+
+.navBarMargin::before {
+  display: block;
+  content: " ";
+  margin-top: -43px;
+  height: 43px;
+  visibility: hidden;
+  pointer-events: none;
+}

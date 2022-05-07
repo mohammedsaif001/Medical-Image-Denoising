@@ -14,9 +14,12 @@ function AlgorithmSteps() {
         return () => window.removeEventListener("resize", updateMedia);
     });
     return (
-        <div id='workingAlgo' className='mt-4'>
-            <div className='stepsContainer mt-4' >
+        <div id='algo' className='mt-4 mb-5 navBarMargin'>
+            <div className="container">
+
                 <h1 className='page-title'>Algorithm Details</h1>
+            </div>
+            <div className='stepsContainer mt-4' >
                 <div className="container2">
                     <p className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae velit harum exercitationem consequuntur, alias eius tempore et delectus ratione facilis qui neque explicabo pariatur, ipsa dolorum nulla odio perferendis praesentium. Dolores minima harum consequatur nisi, saepe quos adipisci quod placeat non a, deleniti, reprehenderit rerum! Consequatur dolor enim iure mollitia nostrum maxime architecto perferendis itaque.</p></div>
 

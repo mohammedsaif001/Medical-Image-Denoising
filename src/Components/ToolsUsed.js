@@ -78,7 +78,7 @@ function ToolsUsed() {
         //         </section>
         //     </div>
         // </Slider>
-        <div className='container mb-5'>
+        <div className='container mb-5 navBarMargin' id='tools' >
             <h1 className="page-title">Tools / Libraries / Frameworks</h1>
             <Slider {...settings}>
                 {/* <img src="images/adidas.png" alt="logo" />
@@ -103,7 +103,6 @@ function ToolsUsed() {
                 <img src="images/scikit.jpg" alt="logo" />
                 <img src="images/keras.jpg" alt="logo" />
                 <img src="images/kaggle.png" alt="logo" />
-                <img src="images/figma.png" alt="logo" />
                 <img src="images/reactjs.png" alt="logo" />
                 <img src="images/bootstrap.png" alt="logo" />
                 <img src="images/javascript2.jpg" alt="logo" />
