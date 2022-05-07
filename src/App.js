@@ -16,7 +16,7 @@ const App = () => {
       <AlgorithmSteps />
       <ImageComparison />
       <ToolsUsed />
-      <Team />
+      {/* <Team /> */}
       <AccordionQuestions />
 
     </>
