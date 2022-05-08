@@ -4,10 +4,10 @@ import Slider from "react-slick";
 function ToolsUsed() {
     var settings = {
         // dots: true,
-        // autoplaySpeed: 750,
+        autoplaySpeed: 750,
         autoplay: true,
-        // slidesToShow: 4,
-        // slidesToScroll: 3,
+        slidesToShow: 6,
+        slidesToScroll: 5,
         initialSlide: 0,
         centerPadding: '200px',
         accessibility: true,
@@ -63,39 +63,9 @@ function ToolsUsed() {
         ]
     };
     return (
-        // <Slider {...settings}>
-        //     <div className="container c1">
-        //         <h2 className="text-center font-weight-bold">Our Partners</h2>
-        //         <section className="customer-logos slider">
-        //             <div className="slide"><img src="images/adidas.png" alt="logo" /></div>
-        //             <div className="slide"><img src="images/facebook.png" alt="logo" /></div>
-        //             <div className="slide"><img src="images/google.png" alt="logo" /></div>
-        //             <div className="slide"><img src="images/instagram.png" alt="logo" /></div>
-        //             <div className="slide"><img src="images/nike.png" alt="logo" /></div>
-        //             <div className="slide"><img src="images/twitter.png" alt="logo" /></div>
-        //             <div className="slide"><img src="images/uber.png" alt="logo" /></div>
-        //             <div className="slide"><img src="images/youtube.png" alt="logo" /></div>
-        //         </section>
-        //     </div>
-        // </Slider>
         <div className='container mb-5 navBarMargin' id='tools' >
             <h1 className="page-title">Tools / Libraries / Frameworks</h1>
             <Slider {...settings}>
-                {/* <img src="images/adidas.png" alt="logo" />
-
-                <img src="images/facebook.png" alt="logo" />
-
-                <img src="images/google.png" alt="logo" />
-
-                <img src="images/twitter.png" alt="logo" />
-
-                <img src="images/instagram.png" alt="logo" />
-
-                <img src="images/nike.png" alt="logo" />
-
-                <img src="images/uber.png" alt="logo" />
-                <img src="images/youtube.png" alt="logo" /> */}
-
 
                 <img src="images/python.png" alt="logo" />
                 <img src="images/tensorflow.png" alt="logo" />
@@ -111,40 +81,6 @@ function ToolsUsed() {
                 <img src="images/aws.png" alt="logo" />
                 <img src="images/flask.png" alt="logo" />
 
-
-                {/* <div>
-                <img src="images/adidas.png" alt="logo" />
-            </div>
-            <div>
-                <img src="images/facebook.png" alt="logo" />
-            </div>
-            <div>
-                <img src="images/google.png" alt="logo" />
-            </div>
-            <div>
-                <img src="images/twitter.png" alt="logo" />
-            </div>
-            <div>
-                <img src="images/instagram.png" alt="logo" />
-            </div>
-            <div>
-                <img src="images/nike.png" alt="logo" />
-            </div>
-            <div>
-                <img src="images/uber.png" alt="logo" />
-            </div>
-            <div>
-                <img src="images/youtube.png" alt="logo" />
-            </div> */}
-                {/* 
-            <img src="images/youtube.png" alt="logo" />
-            <img src="images/youtube.png" alt="logo" />
-            <img src="images/youtube.png" alt="logo" />
-            <img src="images/youtube.png" alt="logo" />
-            <img src="images/youtube.png" alt="logo" />
-            <img src="images/youtube.png" alt="logo" />
-            <img src="images/youtube.png" alt="logo" />
-            <img src="images/youtube.png" alt="logo" /> */}
             </Slider>
         </div>
     );
