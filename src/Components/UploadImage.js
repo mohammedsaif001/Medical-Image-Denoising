@@ -12,18 +12,23 @@ import 'filepond/dist/filepond.min.css';
 import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+import AlertPopUp from './AlertPopUp';
 
 // Register the plugins
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 function UploadImage() {
     const [files, setFiles] = useState([]);
+    const [error, setError] = useState(false)
+    const [downloadImageStatus, setDownloadImageStatus] = useState(false)
+    const [downloadImageUrl, setDownloadImageUrl] = useState(null)
+
     return (
         <div>
             <FilePond
                 files={files}
                 onupdatefiles={setFiles}
-                allowMultiple={true}
+                allowMultiple={false}
                 allowDrop={true}
                 allowBrowse={true}
                 maxFiles={1}
@@ -50,7 +55,7 @@ function UploadImage() {
                         formData.append('image', file);
 
                         const request = new XMLHttpRequest();
-                        request.open('POST', 'http://35.154.93.219:5000/');
+                        request.open('POST', 'http://65.1.177.200:5000/');
 
 
                         // Should call the progress method to update the progress to 100% before calling load
@@ -68,9 +73,32 @@ function UploadImage() {
                                 // the load method accepts either a string (id) or an object
                                 console.log(request.status)
                                 const obj = JSON.parse(request.responseText);
-
-                                // load(obj.imageUrl);
                                 console.log(obj)
+
+
+                                switch (obj.response.code) {
+                                    case 200:
+                                        load(obj.processedImage);
+                                        setDownloadImageStatus(true)
+                                        setDownloadImageUrl(obj.processedImage)
+                                        break
+
+                                    case 400:
+
+                                        switch (obj.response.status) {
+                                            case "image-format-invalid":
+                                                //alert user
+                                                setError(true)
+                                                // alert("image format invalid")
+                                                // error('oh no');
+                                                break
+                                        }
+
+                                        break
+
+                                }
+
+
 
                                 //console.log(obj.imageUrl)
                                 //   setFiles([...files , file]);
@@ -103,9 +131,34 @@ function UploadImage() {
                 name="files"
                 labelIdle='Drag & Drop your files or <span className="filepond--label-action">Browse</span>'
             />
-            <div className="text-center">
-                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">DOWNLOAD YOUR IMAGE</button>
-            </div>
+
+            {
+
+                downloadImageStatus ?
+
+                    <div className="text-center">
+                        <button className="btn btn-outline-success my-2 my-sm-0" onClick={() => window.location = downloadImageUrl} type="submit">DOWNLOAD YOUR IMAGE</button>
+                    </div>
+                    :
+
+                    <div></div>
+
+            }
+
+            {
+                error ?
+
+                    // <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    //     <strong>Error!</strong> Image file invalid.
+                    //     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    //         <span aria-hidden="true">&times;</span>
+                    //     </button>
+                    // </div>
+                    // :
+                    // <div></div>
+                    <AlertPopUp /> :
+                    <div></div>
+            }
 
         </div>
     )
