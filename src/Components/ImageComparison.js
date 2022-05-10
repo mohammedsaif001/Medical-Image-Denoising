@@ -41,7 +41,7 @@ function ImageComparison() {
                                 sliderColor='white'
                             /> */}
                                 <h4 style={{ fontFamily: 'Roboto,sans-serif' }} >SLIDE TO COMPARE RESULT</h4>
-                                <ImageSliderCustom />
+                                <ImageSliderCustom firstImage="images/output.png" secondImage="imagesinput.png" />
 
                             </div>
                         </div>

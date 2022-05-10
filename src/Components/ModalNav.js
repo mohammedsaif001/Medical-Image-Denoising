@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Button, Modal } from 'react-bootstrap'
+import ImageSliderCustom from './ImageSliderCustom'
 import UploadImage from './UploadImage'
 function ModalNav(props) {
     return (
@@ -20,6 +21,7 @@ function ModalNav(props) {
                 <Modal.Body>
                     {/* <h4>Please Upload Tif File</h4> */}
                     <UploadImage />
+
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={props.onHide}>Close</Button>
