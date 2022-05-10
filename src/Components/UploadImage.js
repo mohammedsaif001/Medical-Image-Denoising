@@ -14,7 +14,6 @@ import 'filepond/dist/filepond.min.css';
 import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
-import AlertPopUp from './AlertPopUp';
 
 // Register the plugins
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
@@ -23,6 +22,7 @@ function UploadImage() {
     const [image, setImage] = useState(null)
     const [files, setFiles] = useState([]);
     const [error, setError] = useState(false);
+    const [serverIssue, setServerIssue] = useState(false);
     const [show, setShow] = useState(true);
     const [downloadImageStatus, setDownloadImageStatus] = useState(false)
     const [downloadImageUrl, setDownloadImageUrl] = useState(null)
@@ -115,6 +115,8 @@ function UploadImage() {
                             } else {
                                 // Can call the error method if something is wrong, should exit after
                                 error('oh no');
+                                setShow(true)
+                                setServerIssue(true);
                             }
                         };
 
@@ -145,45 +147,46 @@ function UploadImage() {
             <AlertPopUp variant="danger" /> */}
 
             {
-
-                downloadImageStatus ?
-                    // Alert Dialog Box when Success & Option for downloading Image
-                    // <AlertPopUp variant="success" Imgurl={downloadImageUrl} />
-                    <Alert variant="success" show={show} >
-                        <Alert.Heading>Denoised Successfully :)</Alert.Heading>
+                serverIssue ?
+                    // If server is down or not active
+                    <Alert variant="danger" show={show} onClose={() => setShow(false)} >
+                        <Alert.Heading>We'll be back shortly :(</Alert.Heading>
                         <p>
-                            Please Download Your Processed Image by Clicking on the Button Given Below.
-                            Thank You!
+                            Server is Unavailable at the Moment as it is Under Maintenance. Please Try Again Later.
                         </p>
-                        <hr />
-                        <div className="text-center">
-                            <button className="btn btn-outline-success my-2 my-sm-0 mx-2" onClick={() => window.location = downloadImageUrl} type="submit">DOWNLOAD YOUR IMAGE</button>
-                            <button className="btn btn-outline-danger my-2 my-sm-0 mx-2" onClick={
-                                () => { setError(false); setShow(false); setFiles([]) }} type="submit">UPLOAD AGAIN</button>
-                        </div>
                     </Alert>
                     :
+                    downloadImageStatus ?
+                        // Alert Dialog Box when Success & Option for downloading Image
 
-                    //         <div></div>
-
-                    // }
-
-                    // {
-                    error ?
-                        // Alert Dialog Box when Error Occurs
-                        // <AlertPopUp variant="danger" />
-                        <Alert variant="danger" show={show} onClose={() => setShow(false)} dismissible>
-                            <Alert.Heading>Oh snap! You got an Error :(</Alert.Heading>
+                        <Alert variant="success" show={show} >
+                            <Alert.Heading>Denoised Successfully :)</Alert.Heading>
                             <p>
-                                Please Upload an Image in TIFF format.
+                                Please Download Your Processed Image by Clicking on the Button Given Below.
+                                Thank You!
                             </p>
+                            <hr />
                             <div className="text-center">
+                                <button className="btn btn-outline-success my-2 my-sm-0 mx-2" onClick={() => window.location = downloadImageUrl} type="submit">DOWNLOAD YOUR IMAGE</button>
                                 <button className="btn btn-outline-danger my-2 my-sm-0 mx-2" onClick={
                                     () => { setError(false); setShow(false); setFiles([]) }} type="submit">UPLOAD AGAIN</button>
                             </div>
                         </Alert>
                         :
-                        <div></div>
+                        error ?
+                            // Alert Dialog Box when Error Occurs
+                            <Alert variant="danger" show={show} onClose={() => setShow(false)} dismissible>
+                                <Alert.Heading>Oh snap! You got an Error :(</Alert.Heading>
+                                <p>
+                                    Please Upload an Image in TIFF format.
+                                </p>
+                                <div className="text-center">
+                                    <button className="btn btn-outline-danger my-2 my-sm-0 mx-2" onClick={
+                                        () => { setError(false); setShow(false); setFiles([]) }} type="submit">UPLOAD AGAIN</button>
+                                </div>
+                            </Alert>
+                            :
+                            <div></div>
             }
 
         </div>
