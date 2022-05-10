@@ -172,10 +172,6 @@ function UploadImage() {
                                 <button className="btn btn-outline-danger my-2 my-sm-0 mx-2" onClick={
                                     () => { setError(false); setShow(false); setFiles([]) }} type="submit">UPLOAD AGAIN</button>
                             </div>
-                            <div className="container text-center">
-
-                                <ImageSliderCustom firstImage="https://static.zerochan.net/mery.%28dpqpqp550%29.full.1785984.jpg" secondImage="https://i.pinimg.com/474x/c3/76/47/c37647beb8c214c35bf59d950f1ea6a4.jpg" />
-                            </div>
                         </Alert>
                         :
                         error ?
