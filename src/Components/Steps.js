@@ -16,7 +16,7 @@ function Steps(props) {
         <>
             <div className="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-12" >
                 <center>  <div className="v3_24 mt-0">
-                    <p className="v3_28 ">{props.number}</p>
+                    <p className="v3_28 text-center">{props.number}</p>
                 </div></center>
                 {/* Ternary Operator to check Screen size if less tham 576 add another arrow at last */}
                 {isDesktop ?

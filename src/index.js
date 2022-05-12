@@ -13,6 +13,7 @@ import './Components/ImageComparison.css'
 import './Components/Steps.css'
 import './Components/AccordionQuestions.css'
 import './Components/Tools.css'
+import './Components/Timeline.css'
 
 
 

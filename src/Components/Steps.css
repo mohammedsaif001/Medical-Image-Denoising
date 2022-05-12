@@ -3,7 +3,7 @@
   color: rgb(255, 255, 255);
 
   /* position: absolute; */
-  padding: 15px 34px;
+  padding: 15px 0;
   /* top: 395px; */
   /* margin-top: 15px; */
   /* left: 35px; */
@@ -17,7 +17,8 @@
 .v3_24 {
   width: 85px;
   height: 85px;
-  background: rgb(140, 0, 70);
+  background: rgb(15, 42, 141);
+  /* background: rgb(15, 28, 141); */
   opacity: 1;
   /* position: absolute; */
   margin-top: 150px;

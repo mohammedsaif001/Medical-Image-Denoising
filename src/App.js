@@ -5,6 +5,7 @@ import CarouselHome from './Components/CarouselHome'
 import ImageComparison from './Components/ImageComparison'
 import Navbar from './Components/Navbar'
 import Team from './Components/Team'
+import Timeline from './Components/Timeline'
 import ToolsUsed from './Components/ToolsUsed'
 
 
@@ -13,6 +14,7 @@ const App = () => {
     <>
       <Navbar />
       <CarouselHome />
+      <Timeline />
       <AlgorithmSteps />
       <ImageComparison />
       <ToolsUsed />

@@ -1,5 +1,5 @@
 .team {
-  background: linear-gradient(90deg, #145889 0%, #ab47bc 100%);
+  background: linear-gradient(90deg, #540303 0%, #0d0473 100%);
   padding-top: 10px;
   padding-bottom: 5px;
 }
@@ -98,3 +98,7 @@
     margin-top: 500px;
     background-color: black;
 } */
+
+.dragDrop {
+  cursor: pointer;
+}

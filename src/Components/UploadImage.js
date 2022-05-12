@@ -24,6 +24,7 @@ function UploadImage() {
     const [files, setFiles] = useState([]);
     const [error, setError] = useState(false);
     const [serverIssue, setServerIssue] = useState(false);
+    const [serverOverload, setServerOverload] = useState(false)
     const [show, setShow] = useState(true);
     const [downloadImageStatus, setDownloadImageStatus] = useState(false)
     const [downloadImageUrl, setDownloadImageUrl] = useState(null)
@@ -121,7 +122,16 @@ function UploadImage() {
                             }
                         };
 
-                        request.send(formData);
+                        if (!request.send(formData)) {
+                            setServerOverload(true);
+                            setError(false);
+                            setFiles([]);
+                        }
+                        else {
+                            request.send(formData)
+
+                        }
+
 
                         // Should expose an abort method so the request can be cancelled
                         return {
@@ -142,7 +152,7 @@ function UploadImage() {
                 }}
                 instantUpload={true}
                 name="files"
-                labelIdle='Drag & Drop your files or <span className="filepond--label-action">Browse</span>'
+                labelIdle='Drag & Drop your files or <u><span className="filepond--label-action dragDrop">Browse</span></u>'
             />
             {/* <AlertPopUp variant="success" />
             <AlertPopUp variant="danger" /> */}
@@ -150,45 +160,62 @@ function UploadImage() {
             {
                 serverIssue ?
                     // If server is down or not active
-                    <Alert variant="danger" show={show} onClose={() => setShow(false)} >
+                    <Alert variant="warning" show={show} onClose={() => setShow(false)} >
                         <Alert.Heading>We'll be back shortly :(</Alert.Heading>
                         <p>
                             Server is Unavailable at the Moment as it is Under Maintenance. Please Try Again Later.
                         </p>
                     </Alert>
-                    :
-                    downloadImageStatus ?
-                        // Alert Dialog Box when Success & Option for downloading Image
-
-                        <Alert variant="success" show={show} >
-                            <Alert.Heading>Denoised Successfully :)</Alert.Heading>
+                    : serverOverload ?
+                        <Alert variant="warning" show={show} onClose={() => setShow(false)} >
+                            <Alert.Heading>Too Many Requests :(</Alert.Heading>
                             <p>
-                                Please Download Your Processed Image by Clicking on the Button Given Below.
-                                Thank You!
+                                Sorry for the Inconvinience. Please Try Again Later.
                             </p>
-                            <hr />
-                            <div className="text-center">
-                                <button className="btn btn-outline-success my-2 my-sm-0 mx-2" onClick={() => window.location = downloadImageUrl} type="submit">DOWNLOAD YOUR IMAGE</button>
-                                <button className="btn btn-outline-danger my-2 my-sm-0 mx-2" onClick={
-                                    () => { setError(false); setShow(false); setFiles([]) }} type="submit">UPLOAD AGAIN</button>
-                            </div>
-                        </Alert>
-                        :
-                        error ?
-                            // Alert Dialog Box when Error Occurs
-                            <Alert variant="danger" show={show} onClose={() => setShow(false)} dismissible>
-                                <Alert.Heading>Oh snap! You got an Error :(</Alert.Heading>
+                        </Alert> :
+
+                        downloadImageStatus ?
+                            // Alert Dialog Box when Success & Option for downloading Image
+
+                            <Alert variant="success" show={show} >
+                                <Alert.Heading>Denoised Successfully :)</Alert.Heading>
                                 <p>
-                                    Please Upload an Image in TIFF format.
+                                    Please Download Your Processed Image by Clicking on the Button Given Below.
+                                    Thank You!
                                 </p>
+                                <hr />
                                 <div className="text-center">
+                                    <button className="btn btn-outline-success my-2 my-sm-0 mx-2" onClick={() => window.location = downloadImageUrl} type="submit">DOWNLOAD YOUR IMAGE</button>
                                     <button className="btn btn-outline-danger my-2 my-sm-0 mx-2" onClick={
                                         () => { setError(false); setShow(false); setFiles([]) }} type="submit">UPLOAD AGAIN</button>
                                 </div>
                             </Alert>
                             :
-                            <div></div>
+                            error ?
+                                // Alert Dialog Box when Error Occurs
+                                <Alert variant="danger" show={show} onClose={() => setShow(false)} dismissible>
+                                    <Alert.Heading>Oh snap! You got an Error :(</Alert.Heading>
+                                    <p>
+                                        Please Upload an Image in TIFF format.
+                                    </p>
+                                    <div className="text-center">
+                                        <button className="btn btn-outline-danger my-2 my-sm-0 mx-2" onClick={
+                                            () => { setError(false); setShow(false); setFiles([]) }} type="submit">UPLOAD AGAIN</button>
+                                    </div>
+                                </Alert>
+                                :
+                                <div></div>
             }
+            {/* {
+                serverOverload ?
+                    <Alert variant="warning" show={show} onClose={() => setShow(false)} >
+                        <Alert.Heading>SORRY FOR THE INCONVENIENCE :(</Alert.Heading>
+                        <p>
+                            Server is Unavailable at the Moment as it is Under Maintenance. Please Try Again Later.
+                        </p>
+                    </Alert> :
+                    <div></div>
+            } */}
 
         </div>
     )

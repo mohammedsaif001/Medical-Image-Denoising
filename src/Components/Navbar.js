@@ -15,7 +15,7 @@ function Navbar() {
 
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-3">
+        <nav className="navbar navbar-expand-lg navbar-dark  fixed-top mb-3" style={{ background: 'black' }}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Medical Image Denoise</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,9 +42,9 @@ function Navbar() {
                             <a className="nav-link js-scroll-trigger" href="#faq"  >FAQs</a>
                         </li>
 
+                        <button className="btn btn-outline-light my-2 my-sm-0 mx-3" type="submit" onClick={() => setModalShow(true)}>Upload</button>
                     </ul>
 
-                    <button className="btn btn-outline-light my-2 my-sm-0 mx-3" type="submit" onClick={() => setModalShow(true)}>Upload</button>
 
                     <ModalNav
                         show={modalShow}
