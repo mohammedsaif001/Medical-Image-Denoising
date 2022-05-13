@@ -2,20 +2,30 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div>
-            <div className=" container-fluid-footer footerbody ">
+        <div className='container'>
+            <div className=" container-fluid-footer  footerbody">
                 {" "}
-                <output className="bg-white shadow-sm">
-                    <footer className="section-footer border-top">
+                <output className="">
+                    <footer className=" ">
                         <div className="container-fluid">
-                            <section className="footer-top padding-y">
+                            <section className=" padding-y">
                                 <div className="row">
-                                    <aside className="col-md-8">
+                                    <aside className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 text-center">
                                         <article className="mr-3">
                                             {" "}
                                             <img
                                                 src="images/logo.png"
                                                 className="logo-footer"
+                                                style={{
+                                                    maxWidth: "150px",
+                                                    width: "100%",
+                                                    height: "auto",
+                                                    // justifyContent: 'center',
+                                                    // textAlign: 'center',
+                                                    // display: 'block',
+                                                    // marginLeft: 'auto',
+                                                    // marginRight: 'auto'
+                                                }}
                                             />
                                             <p className="mt-3 description">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -26,10 +36,10 @@ function Footer() {
                                                 numquam veniam itaque dolorem quae voluptatem
                                                 blanditiis?.
                                             </p>
-                                            <div>
+                                            <div className='text-center'>
                                                 {" "}
                                                 <span >
-                                                    <i class="fa fa-book btn btn-icon btn-light linkHover" aria-hidden="true">  <span className='changeFont'> Report</span>
+                                                    <i className="fa fa-book btn btn-icon btn-light linkHover" aria-hidden="true">  <span className='changeFont'> Report</span>
                                                         <a
                                                             target="_blank"
                                                             href="#"
@@ -39,7 +49,7 @@ function Footer() {
                                                         </a></i>
                                                 </span>
                                                 <span >
-                                                    <i class="fa fa-newspaper-o btn btn-icon btn-light linkHover" aria-hidden="true">  <span className='changeFont'> Published Article</span>
+                                                    <i className="fa fa-newspaper-o btn btn-icon btn-light linkHover" aria-hidden="true">  <span className='changeFont'> Published Article</span>
 
                                                         <a
                                                             target="_blank"
@@ -49,7 +59,7 @@ function Footer() {
                                                         </a></i>
                                                 </span>
                                                 <span >
-                                                    <i class="fa fa-github btn btn-icon btn-light linkHover" aria-hidden="true"> <span className='changeFont'> GitHub Repository</span>
+                                                    <i className="fa fa-github btn btn-icon btn-light linkHover" aria-hidden="true"> <span className='changeFont'> GitHub Repository</span>
                                                         <a
                                                             target="_blank"
                                                             href="#"
@@ -60,8 +70,8 @@ function Footer() {
                                             </div>
                                         </article>
                                     </aside>
-                                    <aside className="col-sm-3 col-md-2">
-                                        <h6 className="title">About</h6>
+                                    <aside className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 text-center">
+                                        <h6 className="title title-footer">About</h6>
                                         <ul className="list-unstyled">
                                             <li>
                                                 {" "}
@@ -101,12 +111,12 @@ function Footer() {
                                             </li>
                                         </ul>
                                     </aside>
-                                    <aside className="col-sm-2 col-md-2">
-                                        <h6 className="title">Our app</h6>{" "}
+                                    <aside className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 text-center">
+                                        <h6 className="title title-footer">Our app</h6>{" "}
                                         <a href="#" className="d-block mb-2" data-abc="true">
                                             <img
                                                 className="img-responsive"
-                                                src="https://i.imgur.com/nkZP7fe.png"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
                                                 height="40"
                                             />
                                         </a>{" "}
@@ -123,7 +133,7 @@ function Footer() {
                                     </aside>
                                 </div>
                             </section>
-                            <section className="footer-copyright border-top">
+                            <section className="footer-copyright border-top ">
                                 <p className="float-left text-muted">
                                     {" "}
                                     &copy; 2022 Team 52 Presidency University{" "}

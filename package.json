@@ -22,7 +22,7 @@
     "react-dom": "^18.0.0",
     "react-filepond": "^7.1.1",
     "react-image-comparison-slider": "^1.8.4",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.0",
     "react-slick": "^0.29.0",
     "reactjs-popup": "^2.0.5",
     "semantic-ui-css": "^2.4.1",

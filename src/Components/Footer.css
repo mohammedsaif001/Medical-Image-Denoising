@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap"); */
 
 .footerbody {
-  background-color: #eeeeee;
-  font-family: "Open Sans", serif;
+  /* font-family: "Open Sans", serif; */
   font-size: 14px;
 }
 
+.title-footer {
+  font-family: "Roboto", sans-serif;
+}
 .container-fluid-footer {
   margin-top: 50px;
 }
@@ -21,6 +23,7 @@ a {
 
 a:hover,
 .linkHover:hover {
+  /* color: #a81111; */
   color: red;
 }
 
