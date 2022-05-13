@@ -17,7 +17,7 @@
 .v3_24 {
   width: 85px;
   height: 85px;
-  background: rgb(15, 42, 141);
+  background: linear-gradient(10deg, #540303 0%, #0d0473 100%);
   /* background: rgb(15, 28, 141); */
   opacity: 1;
   /* position: absolute; */

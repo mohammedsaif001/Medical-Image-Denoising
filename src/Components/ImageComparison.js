@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import ImageSlider from "react-image-comparison-slider";
 import './ImageComparison.css'
 import ImageSliderCustom from './ImageSliderCustom';
@@ -8,17 +8,6 @@ function ImageComparison() {
     const [modalShow, setModalShow] = React.useState(false);
     return (
         <div >
-            {/* <div style={{ width: '75%', height: '90vh', marginTop: '5vh', marginBottom: '5vh', marginLeft: 'auto', marginRight: 'auto' }} >
-                <ImageSlider
-                    image1="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    image2="https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    onSlide={() => {
-                        console.log("sliding");
-                    }}
-                />
-
-            </div> */}
-            {/* <h2 >Bootstrap image and text side by side.</h2> */}
             <div className='container navBarMargin' id='working'>
 
                 <h1 className='mt-5 mb-5 page-title'>Working of Algorithm</h1>
@@ -29,17 +18,6 @@ function ImageComparison() {
                     <div className="row" >
                         <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12" >
                             <div className='img-fluid imageSli' >
-                                {/* <ImageSlider
-                                image1={process.env.PUBLIC_URL + "images/Output.jpg"}
-                                image2={process.env.PUBLIC_URL + "images/test.jpg"}
-                                onSlide={() => {
-                                    console.log("sliding");
-                                }}
-                                leftLabelText="Input"
-                                rightLabelText='Output'
-                                handleColor='black'
-                                sliderColor='white'
-                            /> */}
                                 <h4 style={{ fontFamily: 'Roboto,sans-serif' }} >SLIDE TO COMPARE RESULT</h4>
                                 <ImageSliderCustom firstImage="images/output.png" secondImage="images/input.png" />
 

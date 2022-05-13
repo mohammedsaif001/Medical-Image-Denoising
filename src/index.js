@@ -14,6 +14,8 @@ import './Components/Steps.css'
 import './Components/AccordionQuestions.css'
 import './Components/Tools.css'
 import './Components/Timeline.css'
+import './Components/Footer.css'
+
 
 
 

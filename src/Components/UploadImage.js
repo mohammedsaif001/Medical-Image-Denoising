@@ -104,6 +104,7 @@ function UploadImage() {
                                                 setShow(true)
                                                 error('oh no');
                                                 break
+
                                         }
 
                                         break
@@ -122,15 +123,9 @@ function UploadImage() {
                             }
                         };
 
-                        if (!request.send(formData)) {
-                            setServerOverload(true);
-                            setError(false);
-                            setFiles([]);
-                        }
-                        else {
-                            request.send(formData)
+                        request.send(formData)
 
-                        }
+
 
 
                         // Should expose an abort method so the request can be cancelled
@@ -154,8 +149,7 @@ function UploadImage() {
                 name="files"
                 labelIdle='Drag & Drop your files or <u><span className="filepond--label-action dragDrop">Browse</span></u>'
             />
-            {/* <AlertPopUp variant="success" />
-            <AlertPopUp variant="danger" /> */}
+
 
             {
                 serverIssue ?
@@ -206,16 +200,7 @@ function UploadImage() {
                                 :
                                 <div></div>
             }
-            {/* {
-                serverOverload ?
-                    <Alert variant="warning" show={show} onClose={() => setShow(false)} >
-                        <Alert.Heading>SORRY FOR THE INCONVENIENCE :(</Alert.Heading>
-                        <p>
-                            Server is Unavailable at the Moment as it is Under Maintenance. Please Try Again Later.
-                        </p>
-                    </Alert> :
-                    <div></div>
-            } */}
+
 
         </div>
     )

@@ -10,12 +10,15 @@ function Navbar() {
         $('.js-scroll-trigger').on('click', function () {
             $('.navbar-collapse').collapse('hide');
         })
+
+
     }
     )
 
 
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark  fixed-top mb-3" style={{ background: 'black' }}>
+        <nav className="navbar navbar-expand-lg navbar-dark  fixed-top mb-3" style={{ background: 'black' }} id='navigation'>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Medical Image Denoise</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +26,10 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className="nav-link active js-scroll-trigger" aria-current="page" href="#"  >Home</a>
+                        <li className="nav-item ">
+                            <a className="nav-link  js-scroll-trigger " aria-current="page" href="#"  >Home</a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item ">
                             <a className="nav-link js-scroll-trigger" href="#algo"  >Algorithm</a>
                         </li>
                         <li className="nav-item">

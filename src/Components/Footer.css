@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.footerbody {
+  background-color: #eeeeee;
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+}
+
+.container-fluid-footer {
+  margin-top: 50px;
+}
+
+.footer-copyright {
+  margin-top: 13px;
+}
+
+a {
+  text-decoration: none !important;
+  color: #777a7c;
+}
+
+a:hover,
+.linkHover:hover {
+  color: red;
+}
+
+.changeFont {
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+}
+.description {
+  font-size: 12px;
+}
+
+.logo-footer {
+  height: 30px;
+}
+
+.footer-copyright p {
+  margin-top: 10px;
+}

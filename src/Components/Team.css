@@ -1,5 +1,7 @@
 .team {
-  background: linear-gradient(90deg, #540303 0%, #0d0473 100%);
+  background: linear-gradient(90deg, #540303 0%, #000000 100%);
+  /* background: #0d0473; */
+  /* background: linear-gradient(90deg, #540303 0%, #0d0473 100%); */
   padding-top: 10px;
   padding-bottom: 5px;
 }
