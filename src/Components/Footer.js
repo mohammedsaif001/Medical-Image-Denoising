@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className=''>
+        <div className='container'>
             <div className=" container-fluid-footer  footerbody">
                 {" "}
                 <output className="">
