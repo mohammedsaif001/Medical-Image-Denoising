@@ -10,7 +10,7 @@ function Footer() {
                         <div className="container-fluid">
                             <section className=" padding-y">
                                 <div className="row">
-                                    <aside className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 text-center">
+                                    <aside className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
                                         <article className="mr-3">
                                             {" "}
                                             <img
@@ -70,7 +70,7 @@ function Footer() {
                                             </div>
                                         </article>
                                     </aside>
-                                    <aside className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 text-center">
+                                    <aside className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-center">
                                         <h6 className="title title-footer">About</h6>
                                         <ul className="list-unstyled">
                                             <li>
@@ -111,7 +111,7 @@ function Footer() {
                                             </li>
                                         </ul>
                                     </aside>
-                                    <aside className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 text-center">
+                                    <aside className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-center">
                                         <h6 className="title title-footer">Our app</h6>{" "}
                                         <a href="#" className="d-block mb-2" data-abc="true">
                                             <img

@@ -27,7 +27,7 @@ function ImageComparison() {
                             <h4 className='mt-5 mb-4 card-title'>Details About the Working</h4>
                             <p className='mt-3 text-muted' style={{ padding: '0 5%' }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque est labore nemo magnam. Libero nisi a quos consectetur est, ipsum nihil nobis laborum velit quod harum odit magni beatae ullam similique iure, at, eveniet ex voluptatem quam nostrum necessitatibus deleniti? Illo blanditiis dignissimos nostrum aut commodi, fugit similique hic ipsum inventore explicabo natus veniam ullam itaque iusto minus eum! Deserunt quos iure quaerat cupiditate eos reprehenderit repudiandae, repellat doloremque rerum aliquam omnis laudantium iste porro atque similique incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos dolorum nihil numquam officia magnam nulla quam reiciendis similique cupiditate iste aliquam illo officiis modi assumenda odio excepturi voluptatum amet voluptatem, magni maxime labore ducimus esse! Delectus unde, fuga nihil corporis mollitia molestiae aliquam veritatis impedit!</p>
 
-                            <button className="btn btn-dark my-2 my-sm-0 mx-3" type="submit" onClick={() => setModalShow(true)}>CLICK HERE TO UPLOAD YOUR IMAGE</button>
+                            <button className="btn my-2 my-sm-0 mx-3 uploadBtn" type="submit" onClick={() => setModalShow(true)}>CLICK HERE TO UPLOAD YOUR IMAGE</button>
 
                             <ModalNav
                                 show={modalShow}
