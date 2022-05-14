@@ -2,7 +2,7 @@ import React from 'react'
 
 function Timeline() {
     return (
-        <div className="container">
+        <div className="container" id='research'>
             <h1 className="page-title">Reasearch Paper</h1>
 
             <div className='timelineBody'>
