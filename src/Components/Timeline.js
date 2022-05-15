@@ -5,7 +5,7 @@ import TimelineResearch from './TimelineResearch.js'
 function Timeline() {
     return (
         <div className="container" id='research'>
-            <h1 className="page-title">Reasearch Papers</h1>
+            <h1 className="page-title">Research Papers</h1>
 
             <div className='timelineBody'>
                 <div className="timeline">
