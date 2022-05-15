@@ -11,7 +11,7 @@ function Timeline() {
                 <div className="timeline">
                     {researchInfo.length > 0 && researchInfo.map((ele) => (
                         <TimelineResearch key={ele.slNo} cssClass={ele.cssClass} date={ele.date} title={ele.title
-                        } summary={ele.summary} icon={ele.icon} />
+                        } summary={ele.summary} number={ele.slNo} />
                     ))}
 
                 </div>

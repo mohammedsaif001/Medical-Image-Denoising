@@ -11,7 +11,7 @@ function CarouselHome() {
                         src="https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="First slide"
                     />
-                    <Carousel.Caption >
+                    <Carousel.Caption>
                         <h5>First slide label</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
@@ -23,8 +23,12 @@ function CarouselHome() {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div style={{ background: 'black', padding: '20px 10px' }}>
+
+                            <h5 style={{ color: 'red' }}>Second slide label</h5>
+                            <p style={{ color: 'white' }}> Lorem ipsum dolor,!
+                            </p>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>

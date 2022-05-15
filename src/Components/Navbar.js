@@ -30,10 +30,10 @@ function Navbar() {
                             <a className="nav-link  js-scroll-trigger " aria-current="page" href="#"  >Home</a>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link js-scroll-trigger" href="#algo"  >Algorithm</a>
+                            <a className="nav-link js-scroll-trigger" href="#research"  >Research</a>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link js-scroll-trigger" href="#research"  >Research</a>
+                            <a className="nav-link js-scroll-trigger" href="#algo"  >Algorithm</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link js-scroll-trigger" href="#working">Working</a>

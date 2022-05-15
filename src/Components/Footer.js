@@ -24,13 +24,7 @@ function Footer() {
                                                     }}
                                                 />
                                                 <p className="mt-3 description">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Totam nemo aspernatur incidunt aut ab ut aliquid
-                                                    molestiae alias unde possimus provident nulla rem
-                                                    suscipit, quia nesciunt doloribus debitis impedit optio,
-                                                    iusto eligendi recusandae error soluta quidem. Animi
-                                                    numquam veniam itaque dolorem quae voluptatem
-                                                    blanditiis?.
+                                                    This Application &amp; Model is created by Presidency University students of batch 2018 - 2022 for our Final Year Project. To know more or to get a clear picture about this work, please access our project report from the link given below. You can also go through the article published about the same &amp; find the link for the code in the Github Repository mentioned below.
                                                 </p>
                                                 <div className='text-center '>
                                                     {" "}
