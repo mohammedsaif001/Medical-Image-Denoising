@@ -145,7 +145,7 @@
 .container4 .content p {
   margin: 0;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 19px;
   color: #2e2d2dae;
 }
 
@@ -208,4 +208,10 @@
     font-size: 85%;
     line-height: 20px;
   }
+}
+
+.link:hover {
+  text-decoration: underline;
+  font-style: italic;
+  /* text-decoration: underline; */
 }

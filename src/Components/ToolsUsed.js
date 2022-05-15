@@ -82,7 +82,6 @@ function ToolsUsed() {
                     <img src="images/bootstrap.png" alt="Boootsrap logo" />
                     <img src="images/javascript2.jpg" alt="Javascript logo" />
                     <img src="images/jquery.png" alt="Jquery logo" />
-                    <img src="images/nodejs.png" alt="NodeJs logo" />
                     <img src="images/aws.png" alt="AWS logo" />
                     <img src="images/flask.png" alt="Flask logo" />
 
