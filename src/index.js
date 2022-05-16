@@ -15,6 +15,7 @@ import './Components/AccordionQuestions.css'
 import './Components/Tools.css'
 import './Components/Timeline.css'
 import './Components/Footer.css'
+import './Components/CarouselHome.css'
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";

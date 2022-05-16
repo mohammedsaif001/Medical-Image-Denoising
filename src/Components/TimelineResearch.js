@@ -10,8 +10,13 @@ function TimelineResearch(props) {
                 </div>
                 <div className="content">
                     <a href={props.link} target='_blank'><h2 className='timelineHeading link'>{props.title}</h2></a>
-                    <p>{props.summary}
-                    </p>
+                    <ul className='bulletPoints'>
+                        <li>{props.point1}</li>
+                        <li>{props.point2}</li>
+                        <li>{props.point3}</li>
+                    </ul>
+                    {/* <p>{props.summary}
+                    </p> */}
                 </div>
             </div>
             <a href=""></a>

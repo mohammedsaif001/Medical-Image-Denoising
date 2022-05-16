@@ -28,7 +28,7 @@
   top: 9px;
 }
 .accordion .card-header .btn:hover {
-  color: #ff8300;
+  color: #73bb2b;
 }
 .accordion .card-body {
   color: #324353;
@@ -65,7 +65,7 @@
   bottom: -15px;
 } */
 .accordion .highlight .btn {
-  color: #74bd30;
+  color: #ff0000;
 }
 .accordion .highlight i {
   transform: rotate(180deg);

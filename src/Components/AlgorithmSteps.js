@@ -20,7 +20,7 @@ function AlgorithmSteps() {
                 <h1 className='page-title'>Algorithm Details</h1>
             </div>
             <div className='stepsContainer mt-4' >
-                <div className="container2">
+                <div className="container pb-4">
                     <p className='mt-4'>Presenting a CNN-based algorithm with the help of encoders and decoders using ReLu, Sigmoid as activation function and Adam as an optimizer to find the optimum fit and to train the efficient model using Extensive Empirical Study using data sets from Brainweb. Estimating the original image by suppressing noise from a noise contaminated version of the image by applying our efficient algorithm to denoise the image with the highest SSIM and PSNR values with low processing time.</p></div>
 
                 {isDesktop ? <div className="row ">
@@ -29,7 +29,7 @@ function AlgorithmSteps() {
                     ))}
                 </div>
                     :
-                    <div className="row container2">
+                    <div className="row">
                         {StepsContent.length > 0 && StepsContent.map((ele, index) => (
                             <Steps number={ele.slNo} heading={ele.heading} description={ele.description} key={ele.slNo} value={index} />
                         ))}

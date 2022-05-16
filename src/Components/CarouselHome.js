@@ -11,9 +11,9 @@ function CarouselHome() {
                         src="https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <Carousel.Caption className='thirdSlide'>
+                        <h5>Medical Image Denoising</h5>
+                        <p>We denoise medical MRI images since it is a mandatory and essential preprocessing technique for further medical image processing stages.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -22,13 +22,10 @@ function CarouselHome() {
                         src="https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
-                        <div style={{ background: 'black', padding: '20px 10px' }}>
-
-                            <h5 style={{ color: 'red' }}>Second slide label</h5>
-                            <p style={{ color: 'white' }}> Lorem ipsum dolor,!
-                            </p>
-                        </div>
+                    <Carousel.Caption className='thirdSlide'>
+                        <h5 >What is Image Denoising? </h5>
+                        <p > One of the fundamental challenges in the field of image processing and computer vision is image denoising, where the underlying goal is to estimate the original image by suppressing noise from a noise-contaminated version of the image.
+                        </p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -37,9 +34,9 @@ function CarouselHome() {
                         src="https://images.pexels.com/photos/5723883/pexels-photo-5723883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Third slide"
                     />
-                    <Carousel.Caption>
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <Carousel.Caption className='thirdSlide'>
+                        <h5>Why CNN for Image Denoising? </h5>
+                        <p>The CNN based image denoising models have shown improvement in denoising performance as compared to non‐CNN methods.The use of CNN is not limited to general image denoising alone, CNN produced excellent results for blind denoising , real noisy images and many others.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
