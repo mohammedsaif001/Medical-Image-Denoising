@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Medical-Image-Denoising/static/css/main.5e5ca26d.css",
-    "main.js": "/Medical-Image-Denoising/static/js/main.e8f5dd37.js",
+    "main.css": "/Medical-Image-Denoising/static/css/main.8c8bbe61.css",
+    "main.js": "/Medical-Image-Denoising/static/js/main.7ffca0f6.js",
     "static/js/787.e43193dc.chunk.js": "/Medical-Image-Denoising/static/js/787.e43193dc.chunk.js",
     "index.html": "/Medical-Image-Denoising/index.html",
     "static/media/slick.svg": "/Medical-Image-Denoising/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Medical-Image-Denoising/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Medical-Image-Denoising/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Medical-Image-Denoising/static/media/slick.295183786cd8a1389865.woff",
-    "main.5e5ca26d.css.map": "/Medical-Image-Denoising/static/css/main.5e5ca26d.css.map",
-    "main.e8f5dd37.js.map": "/Medical-Image-Denoising/static/js/main.e8f5dd37.js.map",
+    "main.8c8bbe61.css.map": "/Medical-Image-Denoising/static/css/main.8c8bbe61.css.map",
+    "main.7ffca0f6.js.map": "/Medical-Image-Denoising/static/js/main.7ffca0f6.js.map",
     "787.e43193dc.chunk.js.map": "/Medical-Image-Denoising/static/js/787.e43193dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e5ca26d.css",
-    "static/js/main.e8f5dd37.js"
+    "static/css/main.8c8bbe61.css",
+    "static/js/main.7ffca0f6.js"
   ]
 }
