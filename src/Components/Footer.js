@@ -103,7 +103,7 @@ function Footer() {
                                         </aside>
                                         <aside className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-center ">
                                             <h6 className="title title-footer">Download Android App</h6>{" "}
-                                            <a href="#" className="d-block mb-2" data-abc="true">
+                                            <a href="https://play.google.com/store/apps/details?id=in.presidencyuniversity.imagedenoiseapp" className="d-block mb-2" data-abc="true">
                                                 <img
                                                     className="img-responsive"
                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
