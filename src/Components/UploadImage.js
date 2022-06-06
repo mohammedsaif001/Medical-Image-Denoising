@@ -61,7 +61,7 @@ function UploadImage() {
                         formData.append('image', file);
 
                         const request = new XMLHttpRequest();
-                        request.open('POST', 'https://65.1.177.200/cgi-bin/myproject/main.py');
+                        request.open('POST', 'https://172.105.52.26:5000');
 
 
                         // Should call the progress method to update the progress to 100% before calling load
