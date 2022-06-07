@@ -104,3 +104,7 @@
 .dragDrop {
   cursor: pointer;
 }
+
+.card {
+  height: 100%;
+}
