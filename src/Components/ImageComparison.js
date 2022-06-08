@@ -74,44 +74,48 @@ function ImageComparison() {
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Gaussian Filter </td>
+                    <td>Gaussian Filter</td>
                     <td>18.08</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td>Denoise Bilateral </td>
-                    <td> 18.22</td>
+                    <td>Denoise Bilateral</td>
+                    <td>18.22</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td> Denoise Wavelet </td> <td> 22.43</td>
+                    <td>Denoise Wavelet</td>
+                    <td>22.43</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
-                    <td>Shift Inv Wavelet</td> <td> 22.46</td>
+                    <td>Shift Inv Wavelet</td>
+                    <td>22.46</td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
-                    <td>Img_Aniso_Filter</td> <td> 18.36</td>
+                    <td>Img_Aniso_Filter</td>
+                    <td>18.36</td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
                     <td>Denoise_Img_As_8byte</td>
-                    <td> 22.63</td>
+                    <td>22.63</td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
-                    <td> BM3D Denoise </td>
-                    <td> 21.88</td>
+                    <td>BM3D Denoise</td>
+                    <td>21.88</td>
                   </tr>
                   <tr>
                     <th scope="row">8</th>
-                    <td>Previous Model </td>
-                    <td> 27.15</td>
+                    <td>Previous Model</td>
+                    <td>27.15</td>
                   </tr>
                   <tr>
                     <th scope="row">9</th>
-                    <td> Present Model </td> <td> 28.79</td>
+                    <td>Current Model</td>
+                    <td>28.79</td>
                   </tr>
                 </tbody>
               </table>
