@@ -55,11 +55,11 @@ const teamDetails = [
         image: "images/uvais.jpg",
         personName: 'Mohammed Uvais',
         title: '20181CSE0437',
-        content: 'UI/UX designing ,Content Creation,Documentation and Website Testing ',
+        content: 'Front-end Developer & UI/UX designing, Content Creation, Documentation & Website Testing. ',
         linkedin: 'https://www.linkedin.com/in/mohammeduvais/',
-        email: 'mohammeduvais.premium@gmail.com',
-        github: 'https://github.com/UvaisPremium',
-        instagram: 'https://www.instagram.com/mohammed_uvais_premium/?hl=en'
+        email: 'mohammeduvais.official@gmail.com',
+        github: 'https://github.com/Mohammed-Uvais',
+        instagram: 'https://www.instagram.com/mohammeduvais_official/'
     }
 ]
 
