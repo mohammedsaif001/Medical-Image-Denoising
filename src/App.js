@@ -6,7 +6,6 @@ import Footer from "./Components/Footer";
 import ImageComparison from "./Components/ImageComparison";
 import Navbar from "./Components/Navbar";
 import Team from "./Components/Team";
-import Test from "./Components/Test";
 import Timeline from "./Components/Timeline";
 import ToolsUsed from "./Components/ToolsUsed";
 
