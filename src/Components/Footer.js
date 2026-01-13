@@ -65,7 +65,7 @@ function Footer() {
                           <span className="mx-2 ">
                             <a
                               target="_blank"
-                              href="https://github.com/abdullah7795/MRIDenoisingmodel"
+                              href="https://github.com/abdullah7795/Medical-Image-Denoising"
                               data-abc="true"
                             >
                               <i
